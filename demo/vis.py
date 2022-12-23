@@ -48,6 +48,9 @@ def show2Dpose(kps, img):
 
 
 def show3Dpose(vals, ax):
+    np.set_printoptions(threshold=np.inf)
+    print('vals is')
+    print(vals)
     ax.view_init(elev=15., azim=70)
 
     I = np.array( [0, 0, 1, 4, 2, 5, 0, 7,  8,  8, 14, 15, 11, 12, 8,  9])
